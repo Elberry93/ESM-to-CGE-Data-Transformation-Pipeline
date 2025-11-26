@@ -102,8 +102,8 @@ Replicate Script 3 but for the investment block rather than the energy block.
 ### Mechanism:
 1.	Parse all investment-related formulas in the original IND sheet.
 2.	Extract all references to:
-o	“Aggregated_By_Sector”
-o	“Final_Investments_Multiplied”
+-	“Aggregated_By_Sector”
+-	“Final_Investments_Multiplied”
 3.	Build a semantic mapping file:
 _final_formula_mapping_semantic-INV.xlsx_
 4.	Recalculate every IND investment cell numerically using the datasets produced by Script 4.
