@@ -5,7 +5,7 @@ This repository contains the full data-processing pipeline used to handle techno
 2.	Script 2 processes the extracted data into a structured energy-balance dataset.
 3.	Script 3 learns all formula references in the original IND sheet and reconstructs it entirely from raw energy data.
 4.	Script 4 repeats the full procedure for investments: extraction, corrections, percentage allocation, multiplication, and aggregation.
-5.	Script 5 learns the investment formulas and reconstructs the investment IND sheet from the investment dataset created in Script 4.
+5.	Script 5 learns the investment formulas and reconstructs the investment IND sheet from the investment dataset created in Script 4
 ## Script 1: extract_ESM_energy_and_costs. ipynb
 ### Purpose:
 Extract specific OPERA output fields from each yearly workbook and write them into _Book-EnergyBal with biofuels.xlsx (energy flows) and Inv-python.xlsx (costs)_.
@@ -113,7 +113,13 @@ _final_formula_mapping_semantic-INV.xlsx_
 ### Role in pipeline:
 Provides a fully formula-free reconstruction of the entire investment block, aligned with the GEM-E3 model inputs.
 
-
+# Required Python Packages
+- _pandas_
+- _openpyxl_
+- _numpy_
+- _colorama_
+  
+All packages can be installed via pip (e.g. pip install _pandas_)
 # File Overview
 ### Extracted Data:
 -	_Book-EnergyBal with biofuels.xlsx_ (energy extraction and processing)
