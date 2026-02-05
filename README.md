@@ -49,8 +49,10 @@ Sheets written inside the same workbook:
 -	“Electricity & Heat”
 -	“public transport”
 -	“private transport”
-Details:
+
+#### Details:
 The script groups energy values by technology, carrier, sector, and year. All values ultimately originate from OPERA’s “Energy balance options” sheet (Column D), extracted in Script 1. No other source is used.
+
 ### Role in pipeline:
 The sheet “Tech, Carrier & Sector by Year” is the master dataset for energy-flow reconstruction in Script 3.
 ## Script 3: learn_and_rebuild_IND_EN.ipynb
